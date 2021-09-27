@@ -2,8 +2,8 @@ from flask import Flask, request, jsonify, abort, render_template
 from flask_sqlalchemy import SQLAlchemy, BaseQuery
 from sqlalchemy import func, text, literal_column, cast
 from flask_marshmallow import Marshmallow
-from .helpers import jsonmultidict as json2dict
-from .helpers.json_encoder import CustomJSONEncoder
+from helpers import jsonmultidict as json2dict
+from helpers.json_encoder import CustomJSONEncoder
 from flask_mail import Mail
 from flask_cors import CORS
 from datetime import datetime, date, time, timedelta
