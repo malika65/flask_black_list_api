@@ -2,8 +2,7 @@ from flask import Blueprint
 from app import *
 import sys
 sys.path.append('python-flask-api/app/models')
-from .user import *
-
+from .user import UserJsonSchema,User
 
 User_blueprint = Blueprint('User', __name__)
 
