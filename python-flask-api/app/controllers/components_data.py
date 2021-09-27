@@ -17,7 +17,7 @@ components_data_blueprint = Blueprint('components_data', __name__)
 
 import sys
 sys.path.append('python-flask-api/app/models')
-from user import User
+from .user import User
 
 
 @components_data_blueprint.route('/user_name_exist/<value>')
