@@ -11,4 +11,5 @@ Pillow
 Flask-Excel
 pyexcel-xlsx
 pdfkit
+flask_babel
 gunicorn==20.1.0
