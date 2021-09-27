@@ -16,7 +16,7 @@ json_list = LabelValueJsonSchema(many = True)
 components_data_blueprint = Blueprint('components_data', __name__)
 
 
-from app.models.user import User
+from .app.models.user import User
 
 
 @components_data_blueprint.route('/user_name_exist/<value>')
