@@ -81,7 +81,7 @@ app.json_encoder = CustomJSONEncoder
 jwt = JWTManager(app)
 
 
-@jwt.user_loader
+@jwt_required()
 def user_loader_callback(identity):
     try:
         from .models.user import User
