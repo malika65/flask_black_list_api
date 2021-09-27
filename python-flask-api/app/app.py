@@ -48,7 +48,7 @@ mail = Mail(app)  # init mail client
 excel.init_excel(app)  # init flask_excel
 
 
-from .helpers.utils import utils, OptionalButNotEmpty
+from helpers.utils import utils, OptionalButNotEmpty
 
 # Handle app exceptions
 # Return 500 Internal Server Error
@@ -97,12 +97,12 @@ def invalid_token_callback(token):
     return jsonify("Invalid Token"), 401
 
 
-from .controllers.components_data import  components_data_blueprint
-from .controllers.fileuploader import file_uploader_blueprint
-from .controllers.auth import auth_blueprint
-from .controllers.account import account_blueprint
-from .controllers.user import User_blueprint
-from .controllers.blacklist import Blacklist_blueprint
+from controllers.components_data import  components_data_blueprint
+from controllers.fileuploader import file_uploader_blueprint
+from controllers.auth import auth_blueprint
+from controllers.account import account_blueprint
+from controllers.user import User_blueprint
+from controllers.blacklist import Blacklist_blueprint
 
 
 # Page controller blueprint
