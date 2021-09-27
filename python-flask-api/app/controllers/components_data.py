@@ -17,11 +17,12 @@ components_data_blueprint = Blueprint('components_data', __name__)
 
 import sys
 sys.path.append('python-flask-api/app/models')
-from .user import User
+
 
 
 @components_data_blueprint.route('/user_name_exist/<value>')
 def user_name_exist(value = None):
+    from .user import User
     try:
         exist = User.query.with_entities(User.name).filter(User.name == value).first()
         if exist:
@@ -33,6 +34,7 @@ def user_name_exist(value = None):
 
 @components_data_blueprint.route('/user_email_exist/<value>')
 def user_email_exist(value = None):
+    from .user import User
     try:
         exist = User.query.with_entities(User.email).filter(User.email == value).first()
         if exist:
