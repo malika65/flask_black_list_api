@@ -1,6 +1,8 @@
 from flask import Blueprint
 from app import *
-from ..models.user import *
+import sys
+sys.path.append('python-flask-api/app/models')
+from .user import *
 
 
 User_blueprint = Blueprint('User', __name__)
