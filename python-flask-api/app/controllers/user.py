@@ -1,8 +1,8 @@
 from flask import Blueprint
 from app import *
 import sys
-sys.path.append('python-flask-api/app/models')
-from .user import UserJsonSchema, User
+sys.path.append('D:/Documents/RadSystems/pyrad projects/projectbl/python-flask-api/app/models')
+from user import UserJsonSchema, User
 
 User_blueprint = Blueprint('User', __name__)
 
