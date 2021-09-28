@@ -1,6 +1,9 @@
 from flask import Blueprint
 from app import *
-from ..models.blacklist import *
+import sys
+sys.path.append('D:/Documents/RadSystems/pyrad projects/projectbl/python-flask-api/app/models')
+
+from models.blacklist import *
 
 
 Blacklist_blueprint = Blueprint('Blacklist', __name__)

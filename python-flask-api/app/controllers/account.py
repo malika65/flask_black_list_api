@@ -1,6 +1,9 @@
 from flask import Blueprint
 from app import *
-from ..models.user import *
+import sys
+sys.path.append('D:/Documents/RadSystems/pyrad projects/projectbl/python-flask-api/app/models')
+
+from models.user import *
 
 
 account_blueprint = Blueprint('account', __name__)
