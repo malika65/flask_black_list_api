@@ -2,7 +2,7 @@ import os
 from flask import Blueprint, request, jsonify
 from app import app
 import sys
-sys.path.insert('1','python-flask-api/app/helpers')
+sys.path.insert(1,'python-flask-api/app/helpers')
 from .uploader import Uploader
 file_uploader_blueprint = Blueprint('file_uploader_blueprint', __name__)
 
