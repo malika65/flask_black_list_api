@@ -33,5 +33,5 @@ def rbac_required(fn):
         if not rbac.get_page_access(path):
             return jsonify(f"You are not allowed to access this page '{path}'"), 403
         return fn(*args, **kwargs)
-    wrapper.__name__ = func.__name__
+    wrapper.__name__ = fn.__name__
     return wrapper
