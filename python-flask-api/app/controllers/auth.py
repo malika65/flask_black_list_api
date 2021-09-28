@@ -1,7 +1,10 @@
 from flask import Blueprint, redirect, url_for, render_template
 from app import *
 from flask_jwt_extended import create_access_token, decode_token
-from ..models.user import *
+import sys
+sys.path.append('D:/Documents/RadSystems/pyrad projects/projectbl/python-flask-api/app/models')
+
+from models.user import *
 
 
 auth_blueprint = Blueprint('index', __name__)
